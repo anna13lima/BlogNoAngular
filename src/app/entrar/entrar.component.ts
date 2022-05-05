@@ -19,6 +19,7 @@ export class EntrarComponent implements OnInit {
   }
 
   entrar() {
+    console.log(this.userLogin);
     this.auth.entrar(this.userLogin).subscribe({
       next: (resp: UserLogin) => {
         this.userLogin = resp;
