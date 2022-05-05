@@ -15,7 +15,7 @@
       <ul class="navbar-nav mr-auto d-flex align-items-center">
         <li class="nav-item">
           <img
-            src="/src/assets/img/User.png"
+            src="{{ foto }}"
             alt=""
             width="50px"
             height="50px"
@@ -24,7 +24,7 @@
         </li>
 
         <li class="nav-item pl-3">
-          <p class="m-0 font-weight-bold text-white fs-16">Nome do usuario</p>
+          <p class="m-0 font-weight-bold text-white fs-16">{{ nome }}</p>
         </li>
 
         <li class="nav-item pl-3">
@@ -37,9 +37,9 @@
       </ul>
 
       <ul class="navbar-nav ml -auto d-flex align-items-center">
-        <p class="m-0 font-weight-bold text-white fs-16">
+        <a (click)="sair()" class="m-0 font-weight-bold text-white fs-16">
           Sair <i class="fa fa-sign-out" aria-hidden="true"></i>
-        </p>
+        </a>
       </ul>
     </div>
   </div>
